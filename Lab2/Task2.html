@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram Login Page</title>
+        <style>
+            
+            body {
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            }
+            
+            /*Left side*/
+            .logo {
+                height: 60px;
+                position: absolute;
+                left: 50px;
+                top: 50px;
+                font-size: 40px;
+                color: #262626;
+            }
+
+            div.logo {
+                left: 180px;
+                top: 80px;
+                max-width: 500px;
+                text-align: center;
+            }
+
+            .photo {
+                position: absolute;
+                left: 185px;
+                top: 270px;
+                height: 400px;
+            }
+            /*Right side*/
+            /*Containers*/
+            .container {
+                position: absolute;
+                right: 150px;
+                top: 100px;
+                background-color: white;
+                padding: 40px;
+                border: 1px solid #dbdbdb;
+                width: 350px;
+                height: 480px;
+            }
+            
+            .container h3 {
+                text-align: left;
+                color: #262626;
+                font-size: 17px;
+                font-weight: 600;
+                margin-bottom: 30px;
+                margin-top: 10px;
+            }
+            
+            .input {
+                width: 100%;
+                height: 38px;
+                padding: 9px 8px;
+                font-size: 12px;
+                border: 1px solid #dbdbdb;
+                border-radius: 8px;
+                box-sizing: border-box;
+                margin-bottom: 6px;
+                background-color: #fafafa;
+            }
+
+            .login {
+                width: 100%;
+                height: 32px;
+                background-color: #0095f6;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .forgot-password {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 12px;
+            }
+
+            .forgot-password a {
+                color: #00376b;
+                font-size: 12px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 12px;
+            }
+
+            .divider {
+                display: none;
+            }
+
+            .create-container {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .create-button {
+                width: 100%;
+                height: 38px;
+                background-color: #ffffff;
+                color: #385185;
+                font-size: 14px;
+                font-weight: 600;
+                border: 1px solid #dbdbdb;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .facebook-icon {
+                width: 30px;
+                height: 30px;
+            }
+            
+            .meta-logo-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            .meta-logo {
+                width: 130px;
+            }
+
+            .facebook-login {
+                width: 100%;
+                height: 38px;
+                background-color: #ffffff;
+                font-size: 14px;
+                font-weight: 600;
+                border: 1px solid #dbdbdb;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .page {
+                font-weight: 600;
+                color: #0095f6;
+            }
+            
+            .down {
+                position: absolute;
+                bottom: 20px;
+                left:230px
+            }
+
+            .other-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 16px;
+                justify-content: center;
+            }
+
+            .other-links a {
+                color: #8e8e8e;
+                font-size: 9px;
+                white-space: nowrap;
+            }
+
+            .meta {
+                color: #8e8e8e;
+                font-size: 10px;
+                text-align: center;
+            }
+
+
+            /*Actions*/
+            .input:focus {
+                border-color: #a8a8a8;
+                outline: none;
+                background-color: white;
+            }
+           
+            .input::placeholder {
+                color: #8e8e8e;
+            }
+            
+            .login:hover {
+                background-color: #1877f2;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+            }
+
+            .create-button:hover {
+                background-color: #f7f7f7;
+            }
+
+            .facebook-login:hover {
+                background-color: #f7f7f7;
+            }
+            
+        </style>
+        
+        
+    </head>
+    <body>
+
+        <img class="logo" src="https://i.pinimg.com/474x/c3/48/3f/c3483ff50f94955bf3bacfc5a5796731.jpg?nii=t" alt="instagram logo">
+        <div class="logo">Посмотрите, какими моментами из жизни поделились ваши <span style="color: #db3e5a;">близкие друзья</span>.</div>
+        <img class="photo" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/nWfBjz-5_uf.png" alt="instagram logo">
+
+        <div class="container">
+            <h3>Войти в Instagram</h3>
+            
+            <input type="text" class="input" placeholder="Имя пользователя, номер телефона или эл. адрес">
+            
+            <input type="password" class="input" placeholder="Пароль">
+            
+            <a href="https://www.google.com/"><button class="login">Войти</button></a>
+            
+            <div class="forgot-password">
+                <a href="https://www.google.com/">Забыли пароль?</a>
+            </div>
+            
+            <div class="create-container">
+                <a href="https://www.google.com/">
+                    <button class="create-button">
+                        <img class="facebook-icon" src="https://static.vecteezy.com/system/resources/previews/042/127/218/non_2x/round-circle-blue-facebook-logo-with-long-shadow-on-a-transparent-background-free-png.png" alt="facebook">
+                        Войти через Facebook
+                    </button>
+                </a>
+            </div>
+            
+            <a href="https://www.google.com/"><button class="facebook-login">Создать новый аккаунт</button></a>
+            
+            <div class="meta-logo-container">
+                <img class="meta-logo" src="https://cdn.siasat.com/wp-content/uploads/2023/07/asvsvdv.jpg" alt="Meta logo">
+            </div>
+        </div>
+
+        <div class="down">
+            <div class="other-links">
+                <a href="https://www.google.com/">Meta</a>
+                <a href="https://www.google.com/">Информация</a>
+                <a href="https://www.google.com/">Блог</a>
+                <a href="https://www.google.com/">Вакансии</a>
+                <a href="https://www.google.com/">Помощь</a>
+                <a href="https://www.google.com/">API</a>
+                <a href="https://www.google.com/">Конфиденциальность</a>
+                <a href="https://www.google.com/">Условия</a>
+                <a href="https://www.google.com/">Популярные аккаунты</a>
+                <a href="https://www.google.com/">Места</a>
+                <a href="https://www.google.com/">Instagram Lite</a>
+                <a href="https://www.google.com/">Загрузка контактов и лица, не являющиеся пользователями</a>
+                <a href="https://www.google.com/">Meta Verified</a>
+            </div>
+            
+            <div class="meta">Русский   ©  2026 Instagram from Meta</div>
+        </div>
+
+    </body>
+</html>

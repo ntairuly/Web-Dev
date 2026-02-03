@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Colorful creature</title>
+        <style>
+            
+            body {
+            background-color: #f0f2f5;
+            }
+            /*Left side*/
+            .logo {
+                height:100px;
+                position:absolute;
+                left:275px;
+                top:205px;
+                font-family: Helvetica;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 32px;
+                max-width: 420px;
+            }
+
+            div.logo {
+                left: 300px;
+                top: 275px;
+            }
+
+            /*Right side*/
+            /*Containers*/
+            .container {
+            position: absolute;
+            left: 800px;
+            top: 175px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 365px;
+            border-radius: 8px;
+            }
+            
+            .input {
+            width: 100%;
+            height: 52px;
+            padding: 15px;
+            font-size: 17px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+           }
+
+           .login {
+                width: 100%;
+                height: 48px;
+                background-color: #1877f2;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                margin-bottom: 16px;
+            }
+
+            .forgot-password {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #1877f2;
+                text-decoration: none;
+                font-family: Arial;
+                font-size: 14px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            .forgot-password a {
+                color: #1877f2;
+            }
+
+            .divider {
+                border-top: 1px solid #dadde1;
+                margin: 20px 0;
+            }
+
+           .create-container {
+                text-align: center;
+            }
+
+           .create-button {
+                background-color: #42b72a;
+                text-align: center;
+                color: white;
+                font-size: 17px;
+                font-weight: bold;
+                border: none;
+                border-radius: 6px;
+                padding: 14px 16px;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+            .description {
+                text-align: center;
+                position: absolute;
+                left: 800px;
+                top: 540px;
+                font-family: Arial;
+                font-size: 14px;
+                max-width: 400px;
+            }
+
+            .page {
+                font-weight: bold;
+                color: #000000;
+            }
+            
+            .down {
+                position: absolute;
+                left: 250px;
+                top: 750px;
+                max-width: 950px;
+                text-align: left;
+            }
+
+            .language-links, .other-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+           }
+
+           .language-links a, .other-links a{
+            color: #949494;
+           }
+
+           .meta{
+            color:#949494;
+           }
+
+
+            /*Actions*/
+           .input:focus {
+            border-color: #1877f2;
+            outline: none;
+           }
+           
+           .input::placeholder {
+            color: #8a8d91;
+            }
+            
+            .login:hover {
+                background-color: #166fe5;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+            }
+
+            .create-button:hover {
+                background-color: #36a420;
+            }
+            
+        </style>
+        
+        
+    </head>
+    <body>
+
+
+        <img class="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="facebook logo">
+        <div class="logo">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</div>
+        
+
+        <div class="container">
+            <input type="text" class="input" placeholder="Электронный адрес или номер телефона">
+            
+            <input type="password" class="input" placeholder="Пароль">
+            
+            <a href="https://www.google.com/"><button class="login">Вход</button></a>
+            
+            <div class="forgot-password">
+                <a href="https://www.google.com/">Забыли пароль?</a>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="create-container">
+                <a href="https://www.google.com/"><button class="create-button">Создать новый аккаунт</button></a>
+            </div>
+        </div>
+
+        <div class="description"><a href="https://www.google.com/" class="page">Создать Страницу</a> знаменитости, музыкальной группы или компании.</div>
+        
+        <div class="down">
+        <!-- Language links flex box -->
+        <div class="language-links">
+            <a>Русский</a>
+            <a href="https://www.google.com/">Қазақша</a>
+            <a href="https://www.google.com/">English (US)</a>
+            <a href="https://www.google.com/">Türkçe</a>
+            <a href="https://www.google.com/">Bahasa Indonesia</a>
+            <a href="https://www.google.com/">中文(简体)</a>
+            <a href="https://www.google.com/">Deutsch</a>
+            <a href="https://www.google.com/">한국어</a>
+            <a href="https://www.google.com/">Shqip</a>
+            <a href="https://www.google.com/">Español</a>
+            <a href="https://www.google.com/">Português (Brasil)</a>
+            <button class="more-languages">+</button>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Other links flex box -->
+        <div class="other-links">
+            <a href="https://www.google.com/">Зарегистрироваться</a>
+            <a href="https://www.google.com/">Вход</a>
+            <a href="https://www.google.com/">Messenger</a>
+            <a href="https://www.google.com/">Facebook Lite</a>
+            <a href="https://www.google.com/">Видео</a>
+            <a href="https://www.google.com/">Meta Pay</a>
+            <a href="https://www.google.com/">Магазин Meta</a>
+            <a href="https://www.google.com/">Meta Quest</a>
+            <a href="https://www.google.com/">Ray-Ban Meta</a>
+            <a href="https://www.google.com/">Meta AI</a>
+            <a href="https://www.google.com/">Больше контента от Meta AI</a>
+            <a href="https://www.google.com/">Instagram</a>
+            <a href="https://www.google.com/">Threads</a>
+            <a href="https://www.google.com/">Центр информации о выборах</a>
+            <a href="https://www.google.com/">Политика конфиденциальности</a>
+            <a href="https://www.google.com/">Центр конфиденциальности</a>
+            <a href="https://www.google.com/">Информация</a>
+            <a href="https://www.google.com/">Создать рекламу</a>
+            <a href="https://www.google.com/">Создать Страницу</a>
+            <a href="https://www.google.com/">Разработчикам</a>
+            <a href="https://www.google.com/">Вакансии</a>
+            <a href="https://www.google.com/">Файлы cookie</a>
+            <a href="https://www.google.com/">Рекламные предпочтения</a>
+            <a href="https://www.google.com/">Условия использования</a>
+            <a href="https://www.google.com/">Справка</a>
+            <a href="https://www.google.com/">Загрузка контактов и лица, не являющиеся пользователями</a>
+        </div>
+        <div class="meta">Meta © 2026</div>
+    </div>
+
+    </body>
+</html>
