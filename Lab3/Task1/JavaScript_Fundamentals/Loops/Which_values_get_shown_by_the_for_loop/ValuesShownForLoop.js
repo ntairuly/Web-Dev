@@ -1,0 +1,3 @@
+"use strict";
+for (let i = 0; i < 5; i++) alert( i );//0 1 2 3 4
+for (let i = 0; i < 5; ++i) alert( i );//0 1 2 3 4 same because there is no old value as in previous one

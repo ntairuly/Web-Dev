@@ -1,0 +1,11 @@
+TASKS screenshot:
+![alt text](lists.png)
+![alt text](sets.png)
+![alt text](swap_case.png)
+![alt text](divmod.png)
+![alt text](class2.png)
+![alt text](calendar.png)
+![alt text](ittertools_product.png)
+![alt text](counter.png)
+![alt text](input.png)
+![alt text](phone.png)
